@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> bakerry_website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<img src="images/logo.png" class="logo">
+				<ul class="main_nav animated slideInDown" id = "check_class">
+					<li><a href="#">CAKE DELIVERY</a></li>
+					<li><a href="#">HOW TO ORDER</a></li>
+					<li><a href="#">CHECK MORE</a></li>
+					<li><a href="#">SIGN UP</a></li>
+				</ul>
+				<a href="#" class="mobile_icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+			</div>
+		</nav>
+     <div class="main_content">
+		<h1>WELCOME TO <span class="colorchange"> SADEK CAFE</span>.<br>HOUSE OF CAKE LOVERS OO YES</h1>
+		<a href="#" class="btn btn-one">Click to order</a>
+		<a href="#" class="btn btn-two">Show me more</a>
+	</div>
+	</header>
+
+	<script type="text/javascript">
+		function slideshow(){
+			var x = document.getElementById('check_class');
+			if (x.style.display === 'none') {
+				x.style.display ='block';
+			} else{
+				x.style.display ='none';
+			}
+		}
+	</script>
+</body>
+</html>
